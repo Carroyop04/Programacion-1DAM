@@ -24,11 +24,11 @@ public class Ejercicio26Tema4 {
         int i = 2;//declaramos el contador
         boolean comprobacion = true;//declaramos el booleano sea false para que te devuelva eso de normal
 
-        while (num % i == 0 && num != i) {//este bucle se ejecutara mientras que el resto entre el numero y el contador sea 0 y tengan diferente valor 
+        while (comprobacion && num != i) {//este bucle se ejecutara mientras que el comprobacion sea true y el numero y el contador sean diferentes
             if (num % i == 0) {//si el numero entre el contador sale a 0 comprobacion se cambiara a false
                 comprobacion = false;
-            }
-            i++;//y sele sumara por cada vuelta un valor al contador
+            } 
+                i++;//y sele sumara por cada vuelta un valor al contador
         }
 
         return comprobacion;
